@@ -115,7 +115,7 @@ public class RawFoodCookerGUI extends JFrame {
 			BufferedWriter output = null;
 			try {
 				output = new BufferedWriter(new FileWriter(settingsFile));
-				output.write("Food Type Selected: " + FoodCombobox.getSelectedItem() + "\r\n");
+				output.write("Food Type Selected: " + FoodCombobox.getSelectedItem() + System.lineSeparator());
 			} finally {
 				if (output != null) output.close();
 			}

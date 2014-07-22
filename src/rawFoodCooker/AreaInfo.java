@@ -3,8 +3,8 @@ package rawFoodCooker;
 import org.powerbot.script.Tile;
 import org.powerbot.script.Area;
 
+//TODO cooking and banking tiles could be avoided if isreachable gameobject method was implemented
 public enum AreaInfo {
-	
 
 	CATHERBY (new Area(new Tile(2804, 3433, 0), new Tile(2822, 3448, 0)),
 			new Tile(2817, 3443, 0), //cooking tile
