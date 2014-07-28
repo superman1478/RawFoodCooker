@@ -6,6 +6,7 @@ import java.awt.Graphics;
 import java.awt.Point;
 import java.util.ArrayList;
 
+import methods.DebugMethods;
 import methods.MyCalculations;
 import methods.MyMethods;
 import myAPI.SkillTracker;
@@ -108,9 +109,7 @@ public class RawFoodCooker extends PollingScript<ClientContext> implements Paint
 
 		for (Task task : tasks) {
 			if (task.activate()) {
-				if (debug) {
-					MyMethods.println(task.getClass().getName() + ".execute(");
-				}
+				DebugMethods.println(debug, task.getClass().getName() + ".execute(");
 				task.execute();
 			}
 		}
